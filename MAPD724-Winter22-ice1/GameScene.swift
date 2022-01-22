@@ -18,6 +18,8 @@ class GameScene: SKScene {
     
     //instance variables
     var ocean: Ocean?
+    var plane: Plane?
+    
 
     override func didMove(to view: SKView)
     {
@@ -30,31 +32,34 @@ class GameScene: SKScene {
         
         //add ocean to screen
         ocean = Ocean()  //alloate memory  for variable
-        ocean?.position = CGPoint(x: 0, y: 700)
+        ocean?.position = CGPoint(x: 0, y: 773)
         addChild(ocean!)
         
-      
+        //add plane to the scene
+        plane = Plane()
+        plane?.position = CGPoint(x: 0, y: -490)
+        addChild(plane!)
+        
     }
     
     
     func touchDown(atPoint pos : CGPoint)
     {
-       
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -490))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-       
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -490))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-       
+        plane?.TouchMove(newPos: CGPoint(x: pos.x, y: -490))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-     
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
     
@@ -78,5 +83,6 @@ class GameScene: SKScene {
     {
         // Called before each frame is rendered
         ocean?.Update()
+        plane?.Update()
     }
 }

@@ -19,6 +19,7 @@
 		CFC77E64279C958200FE3340 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E63279C958200FE3340 /* GameObject.swift */; };
 		CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E65279C991200FE3340 /* GameProtocol.swift */; };
 		CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E68279CA17700FE3340 /* Ocean.swift */; };
+		CFC77E6B279CAEAA00FE3340 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E6A279CAEAA00FE3340 /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CFC77E63279C958200FE3340 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		CFC77E65279C991200FE3340 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		CFC77E68279CA17700FE3340 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		CFC77E6A279CAEAA00FE3340 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC77E68279CA17700FE3340 /* Ocean.swift */,
+				CFC77E6A279CAEAA00FE3340 /* Plane.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				CFC77E52279C8DB000FE3340 /* GameViewController.swift in Sources */,
 				CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */,
 				CFC77E4A279C8DB000FE3340 /* AppDelegate.swift in Sources */,
+				CFC77E6B279CAEAA00FE3340 /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
