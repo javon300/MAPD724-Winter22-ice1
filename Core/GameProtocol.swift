@@ -10,5 +10,5 @@ protocol GameProtocol
     func Start()
     
     //update will be called every frame (60 times per second) = 16.666ms
-    func Updaate()
+    func Update()
 }

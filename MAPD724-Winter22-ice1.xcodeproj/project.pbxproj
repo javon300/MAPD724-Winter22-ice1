@@ -18,6 +18,7 @@
 		CFC77E61279C8ED400FE3340 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E60279C8ED400FE3340 /* Assets */; };
 		CFC77E64279C958200FE3340 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E63279C958200FE3340 /* GameObject.swift */; };
 		CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E65279C991200FE3340 /* GameProtocol.swift */; };
+		CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E68279CA17700FE3340 /* Ocean.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		CFC77E60279C8ED400FE3340 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		CFC77E63279C958200FE3340 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		CFC77E65279C991200FE3340 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		CFC77E68279CA17700FE3340 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		CFC77E3D279C8DB000FE3340 = {
 			isa = PBXGroup;
 			children = (
+				CFC77E67279CA15A00FE3340 /* GameObjects */,
 				CFC77E62279C954D00FE3340 /* Core */,
 				CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice1 */,
 				CFC77E47279C8DB000FE3340 /* Products */,
@@ -86,6 +89,14 @@
 				CFC77E65279C991200FE3340 /* GameProtocol.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CFC77E67279CA15A00FE3340 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				CFC77E68279CA17700FE3340 /* Ocean.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */,
 				CFC77E50279C8DB000FE3340 /* GameScene.swift in Sources */,
 				CFC77E52279C8DB000FE3340 /* GameViewController.swift in Sources */,
+				CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */,
 				CFC77E4A279C8DB000FE3340 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
