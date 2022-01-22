@@ -15,6 +15,9 @@
 		CFC77E55279C8DB000FE3340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E53279C8DB000FE3340 /* Main.storyboard */; };
 		CFC77E57279C8DB000FE3340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E56279C8DB000FE3340 /* Assets.xcassets */; };
 		CFC77E5A279C8DB000FE3340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E58279C8DB000FE3340 /* LaunchScreen.storyboard */; };
+		CFC77E61279C8ED400FE3340 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E60279C8ED400FE3340 /* Assets */; };
+		CFC77E64279C958200FE3340 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E63279C958200FE3340 /* GameObject.swift */; };
+		CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E65279C991200FE3340 /* GameProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		CFC77E54279C8DB000FE3340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFC77E56279C8DB000FE3340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC77E59279C8DB000FE3340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFC77E60279C8ED400FE3340 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		CFC77E63279C958200FE3340 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		CFC77E65279C991200FE3340 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 		CFC77E3D279C8DB000FE3340 = {
 			isa = PBXGroup;
 			children = (
+				CFC77E62279C954D00FE3340 /* Core */,
 				CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice1 */,
 				CFC77E47279C8DB000FE3340 /* Products */,
 			);
@@ -67,8 +74,18 @@
 				CFC77E53279C8DB000FE3340 /* Main.storyboard */,
 				CFC77E56279C8DB000FE3340 /* Assets.xcassets */,
 				CFC77E58279C8DB000FE3340 /* LaunchScreen.storyboard */,
+				CFC77E60279C8ED400FE3340 /* Assets */,
 			);
 			path = "MAPD724-Winter22-ice1";
+			sourceTree = "<group>";
+		};
+		CFC77E62279C954D00FE3340 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CFC77E63279C958200FE3340 /* GameObject.swift */,
+				CFC77E65279C991200FE3340 /* GameProtocol.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC77E55279C8DB000FE3340 /* Main.storyboard in Resources */,
+				CFC77E61279C8ED400FE3340 /* Assets in Resources */,
 				CFC77E4C279C8DB000FE3340 /* GameScene.sks in Resources */,
 				CFC77E57279C8DB000FE3340 /* Assets.xcassets in Resources */,
 				CFC77E5A279C8DB000FE3340 /* LaunchScreen.storyboard in Resources */,
@@ -144,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC77E64279C958200FE3340 /* GameObject.swift in Sources */,
+				CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */,
 				CFC77E50279C8DB000FE3340 /* GameScene.swift in Sources */,
 				CFC77E52279C8DB000FE3340 /* GameViewController.swift in Sources */,
 				CFC77E4A279C8DB000FE3340 /* AppDelegate.swift in Sources */,
@@ -312,7 +332,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -340,7 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
