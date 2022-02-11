@@ -20,10 +20,11 @@
 		CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E65279C991200FE3340 /* GameProtocol.swift */; };
 		CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E68279CA17700FE3340 /* Ocean.swift */; };
 		CFC77E6B279CAEAA00FE3340 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E6A279CAEAA00FE3340 /* Plane.swift */; };
+		CFFAB21327B660B1009B8474 /* island.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFAB21227B660B1009B8474 /* island.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-Winter22-ice1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-Winter22-ice4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC77E49279C8DB000FE3340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC77E4B279C8DB000FE3340 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CFC77E4D279C8DB000FE3340 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		CFC77E65279C991200FE3340 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		CFC77E68279CA17700FE3340 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
 		CFC77E6A279CAEAA00FE3340 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		CFFAB21227B660B1009B8474 /* island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = island.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 			children = (
 				CFC77E67279CA15A00FE3340 /* GameObjects */,
 				CFC77E62279C954D00FE3340 /* Core */,
-				CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice1 */,
+				CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice4 */,
 				CFC77E47279C8DB000FE3340 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,12 +65,12 @@
 		CFC77E47279C8DB000FE3340 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice1.app */,
+				CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice1 */ = {
+		CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice4 */ = {
 			isa = PBXGroup;
 			children = (
 				CFC77E49279C8DB000FE3340 /* AppDelegate.swift */,
@@ -81,7 +83,7 @@
 				CFC77E58279C8DB000FE3340 /* LaunchScreen.storyboard */,
 				CFC77E60279C8ED400FE3340 /* Assets */,
 			);
-			path = "MAPD724-Winter22-ice1";
+			path = "MAPD724-Winter22-ice4";
 			sourceTree = "<group>";
 		};
 		CFC77E62279C954D00FE3340 /* Core */ = {
@@ -98,6 +100,7 @@
 			children = (
 				CFC77E68279CA17700FE3340 /* Ocean.swift */,
 				CFC77E6A279CAEAA00FE3340 /* Plane.swift */,
+				CFFAB21227B660B1009B8474 /* island.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -105,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CFC77E45279C8DB000FE3340 /* MAPD724-Winter22-ice1 */ = {
+		CFC77E45279C8DB000FE3340 /* MAPD724-Winter22-ice4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFC77E5D279C8DB000FE3340 /* Build configuration list for PBXNativeTarget "MAPD724-Winter22-ice1" */;
+			buildConfigurationList = CFC77E5D279C8DB000FE3340 /* Build configuration list for PBXNativeTarget "MAPD724-Winter22-ice4" */;
 			buildPhases = (
 				CFC77E42279C8DB000FE3340 /* Sources */,
 				CFC77E43279C8DB000FE3340 /* Frameworks */,
@@ -117,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-Winter22-ice1";
+			name = "MAPD724-Winter22-ice4";
 			productName = "MAPD724-Winter22-ice1";
-			productReference = CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice1.app */;
+			productReference = CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CFC77E41279C8DB000FE3340 /* Build configuration list for PBXProject "MAPD724-Winter22-ice1" */;
+			buildConfigurationList = CFC77E41279C8DB000FE3340 /* Build configuration list for PBXProject "MAPD724-Winter22-ice4" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CFC77E45279C8DB000FE3340 /* MAPD724-Winter22-ice1 */,
+				CFC77E45279C8DB000FE3340 /* MAPD724-Winter22-ice4 */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +181,7 @@
 			files = (
 				CFC77E64279C958200FE3340 /* GameObject.swift in Sources */,
 				CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */,
+				CFFAB21327B660B1009B8474 /* island.swift in Sources */,
 				CFC77E50279C8DB000FE3340 /* GameScene.swift in Sources */,
 				CFC77E52279C8DB000FE3340 /* GameViewController.swift in Sources */,
 				CFC77E69279CA17700FE3340 /* Ocean.swift in Sources */,
@@ -344,8 +348,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "KitoriWorks.centennialcollege.MAPD724-Winter22-ice1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "KitoriWorks.centennialcollege.MAPD724-Winter22-ice";
+				PRODUCT_NAME = "MAPD724-Winter22-ice4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -372,8 +376,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "KitoriWorks.centennialcollege.MAPD724-Winter22-ice1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "KitoriWorks.centennialcollege.MAPD724-Winter22-ice";
+				PRODUCT_NAME = "MAPD724-Winter22-ice4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -383,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CFC77E41279C8DB000FE3340 /* Build configuration list for PBXProject "MAPD724-Winter22-ice1" */ = {
+		CFC77E41279C8DB000FE3340 /* Build configuration list for PBXProject "MAPD724-Winter22-ice4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CFC77E5B279C8DB000FE3340 /* Debug */,
@@ -392,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFC77E5D279C8DB000FE3340 /* Build configuration list for PBXNativeTarget "MAPD724-Winter22-ice1" */ = {
+		CFC77E5D279C8DB000FE3340 /* Build configuration list for PBXNativeTarget "MAPD724-Winter22-ice4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CFC77E5E279C8DB000FE3340 /* Debug */,
