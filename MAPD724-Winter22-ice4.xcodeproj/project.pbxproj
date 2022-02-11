@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF6B65ED27B667A0002D4181 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B65EC27B667A0002D4181 /* Cloud.swift */; };
+		CF6B65F027B678AF002D4181 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6B65EF27B678AF002D4181 /* CollisionManager.swift */; };
 		CFC77E4A279C8DB000FE3340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC77E49279C8DB000FE3340 /* AppDelegate.swift */; };
 		CFC77E4C279C8DB000FE3340 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E4B279C8DB000FE3340 /* GameScene.sks */; };
 		CFC77E4E279C8DB000FE3340 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFC77E4D279C8DB000FE3340 /* Actions.sks */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		CF6B65EC27B667A0002D4181 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		CF6B65EF27B678AF002D4181 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		CFC77E46279C8DB000FE3340 /* MAPD724-Winter22-ice4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-Winter22-ice4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC77E49279C8DB000FE3340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC77E4B279C8DB000FE3340 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -54,9 +56,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF6B65EE27B67893002D4181 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CF6B65EF27B678AF002D4181 /* CollisionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		CFC77E3D279C8DB000FE3340 = {
 			isa = PBXGroup;
 			children = (
+				CF6B65EE27B67893002D4181 /* Managers */,
 				CFC77E67279CA15A00FE3340 /* GameObjects */,
 				CFC77E62279C954D00FE3340 /* Core */,
 				CFC77E48279C8DB000FE3340 /* MAPD724-Winter22-ice4 */,
@@ -184,6 +195,7 @@
 			files = (
 				CFC77E64279C958200FE3340 /* GameObject.swift in Sources */,
 				CF6B65ED27B667A0002D4181 /* Cloud.swift in Sources */,
+				CF6B65F027B678AF002D4181 /* CollisionManager.swift in Sources */,
 				CFC77E66279C991200FE3340 /* GameProtocol.swift in Sources */,
 				CFFAB21327B660B1009B8474 /* island.swift in Sources */,
 				CFC77E50279C8DB000FE3340 /* GameScene.swift in Sources */,

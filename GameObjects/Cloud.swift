@@ -35,6 +35,10 @@ class Cloud: GameObject
         let randomY:Int = (randomSource?.nextInt(upperBound: 20))! + 756
         position.y = CGFloat(randomY)
         
+        //get random size
+       
+        //rotate object
+        
         //random vertical speed
         verticalSpeed = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
 
