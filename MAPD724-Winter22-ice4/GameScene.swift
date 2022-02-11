@@ -62,7 +62,7 @@ class GameScene: SKScene {
         //preloaded sounds
         do
         {
-            let sounds:[String] = ["thunder", "yay"]
+            let sounds:[String] = ["thunder", "engine"]
             for sound in sounds
             {
 //                let path = Bundle.main.path(forResource: sound, ofType: "mp3")!

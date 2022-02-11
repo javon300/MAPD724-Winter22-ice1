@@ -11,6 +11,9 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var livesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +32,12 @@ class GameViewController: UIViewController {
            // view.showsFPS = true
             //view.showsNodeCount = true
         }
+        CollisionManager.gameViewController = self
+        //initialize lives and score
+        ScoreManager.Score = 00
+        ScoreManager.Lives = 5
+        updateScoreLabel()
+        updateLivesLabel()
     }
 
     override var shouldAutorotate: Bool {
@@ -46,4 +55,17 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    func updateScoreLabel() -> Void
+
+    {
+        scoreLabel.text = "Score: \(ScoreManager.Score)"
+
+    }
+    
+    func updateLivesLabel()
+    {
+        livesLabel.text = "Lives: \(ScoreManager.Lives)"
+    }
+    
 }

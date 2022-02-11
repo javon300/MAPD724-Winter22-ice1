@@ -3,6 +3,7 @@ import GameplayKit
 
 class CollisionManager
 {
+    public static var gameViewController: GameViewController?
     //utility function
     //adds the raious of colliding objects to check if they collided
     public static func SquaredDistance(point1:CGPoint, point2: CGPoint) -> CGFloat
@@ -27,16 +28,19 @@ class CollisionManager
             {
                 switch (object2.name)
                 {
-                    //checks name of sknode returned
-                    case "island":
-                        scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
-                        break
-                    case "cloud":
-                        scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
-                        break
-                    default:
-                        break
-                }
+                   case "island":
+                       ScoreManager.Score += 100
+                       gameViewController?.updateScoreLabel()
+                       scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
+                       break
+                   case "cloud":
+                       ScoreManager.Lives -= 1
+                        gameViewController?.updateLivesLabel()
+                       scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
+                       break
+                   default:
+                       break
+                   }
                 object2.isColliding = true
             
             }
