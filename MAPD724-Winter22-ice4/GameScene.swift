@@ -29,7 +29,7 @@ class GameScene: SKScene {
         
         
         
-        name = "Plane Game"
+        name = "GAME"
         
         //add ocean to screen
         ocean = Ocean()  //alloate memory  for variable
@@ -52,6 +52,29 @@ class GameScene: SKScene {
             let cloud: Cloud = Cloud()
             clouds.append(cloud)
             addChild(clouds[index])
+        }
+        
+        //add sound
+        let engineSound = SKAudioNode(fileNamed: "engine.mp3")
+        self.addChild(engineSound)
+        engineSound.autoplayLooped = true
+        
+        //preloaded sounds
+        do
+        {
+            let sounds:[String] = ["thunder", "yay"]
+            for sound in sounds
+            {
+//                let path = Bundle.main.path(forResource: sound, ofType: "mp3")!
+//                let url: URL = URL(fileURLWithPath: path)
+//                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+//                     player.prepareToPlay()
+            }
+            
+        }
+        catch
+        {
+            
         }
     }
     
@@ -95,9 +118,10 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval)
     {
         // Called before each frame is rendered
+        plane?.Update()
         ocean?.Update()
         island?.Update()
-        plane?.Update()
+        
         
         for cloud in clouds
         {

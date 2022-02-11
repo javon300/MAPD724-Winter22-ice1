@@ -20,19 +20,27 @@ class CollisionManager
         let p2Radius = object2.height!
         let radii = p1Radius + p2Radius
         
-        if (!object2.isColliding!)
+        if(SquaredDistance(point1: p1, point2: p2) < radii * radii)
         {
-            switch (object2.name)
+            //we have a collision
+            if (!object2.isColliding!)
             {
-                case "island":
-                    print("coliding with island")
-                case "cloud":
-                    print("coliding with cloud")
-                default:
-                    break
+                switch (object2.name)
+                {
+                    //checks name of sknode returned
+                    case "island":
+                        scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
+                        break
+                    case "cloud":
+                        scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
+                        break
+                    default:
+                        break
+                }
+                object2.isColliding = true
+            
             }
-            object2.isColliding = true
-        
         }
+        
     }
 }
