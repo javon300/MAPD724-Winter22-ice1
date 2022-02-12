@@ -15,6 +15,7 @@ var screenWidth: CGFloat?
 var screenHeight: CGFloat?
 
 class GameScene: SKScene {
+    var gameManager: GameManager?
     
     //instance variables
     var ocean: Ocean?
@@ -59,23 +60,23 @@ class GameScene: SKScene {
         self.addChild(engineSound)
         engineSound.autoplayLooped = true
         
-        //preloaded sounds
-        do
-        {
-            let sounds:[String] = ["thunder", "engine"]
-            for sound in sounds
-            {
+//        //preloaded sounds
+//        do
+//        {
+//            let sounds:[String] = ["thunder", "engine"]
+//            for sound in sounds
+//            {
 //                let path = Bundle.main.path(forResource: sound, ofType: "mp3")!
 //                let url: URL = URL(fileURLWithPath: path)
 //                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
 //                     player.prepareToPlay()
-            }
-            
-        }
-        catch
-        {
-            
-        }
+//            }
+//
+//        }
+//        catch
+//        {
+//
+//        }
     }
     
     
